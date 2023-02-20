@@ -52,8 +52,8 @@ def fetch_historical_data():
     cursor.execute('''SELECT timestamp, load
                       FROM cpu_load
                       WHERE timestamp >= datetime('now', '-1 hour')
-                      ORDER BY id DESC''')
-    rows = list(reversed(cursor.fetchall()))
+                      ORDER BY id''')
+    rows = list(cursor.fetchall())
 
     # Создаем пустые списки для хранения временных меток и значений CPU
     timestamps = []
@@ -87,8 +87,8 @@ def fetch_average_data():
     cursor.execute('''SELECT timestamp, average
                       FROM cpu_average
                       WHERE timestamp >= datetime('now', '-1 hour')
-                      ORDER BY id DESC''')
-    rows = list(reversed(cursor.fetchall()))
+                      ORDER BY id''')
+    rows = list(cursor.fetchall())
 
     # Создаем пустые списки для хранения временных меток и значений CPU
     timestamps = []
