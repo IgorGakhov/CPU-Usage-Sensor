@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Monitoring</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="static/styles.css">
+    <link type="image/png" href="https://www.servermania.com/kb/wp-content/uploads/2022/07/cpu-chip.png" rel="icon">
+</head>
+
+<body>
+    <!-- Меню -->
+    <a class="menu-link" href="https://github.com/IgorGakhov/CPU-Usage-Sensor"><div class="menu">
+        <img src="https://img.icons8.com/windows/512/github.png" alt="Иконка Гитхаба" />
+        <span>Исходный код</span>
+    </div></a>
+
+    <!-- Тело страницы -->
+    <div class="container">
+        <h1 class="title">Датчик моментальной загрузки процессора</h1>
+        <p>Тестовое задание на позицию Junior Python разработчика в компанию АЛГОНТ.</p>
+        <div class="content">
+            <h2 class="subtitle">История изменения моментальной загрузки процессора</h2>
+            <div class="block">
+                <canvas id="historical-chart" width="1600px" height="800px"></canvas>
+            </div>
+            <h2 class="subtitle">График усредненной загрузки процессора (ср.значение за 1 минуту)</h2>
+            <div class="block">
+                <p>Для отображения графика усредненной загрузки процессора может потребоваться некоторое время. Пожалуйста, подождите.</p>
+                <canvas id="average-chart" width="1600px" height="800px"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Собственные скрипты -->
+    <script type="text/javascript" src="static/charts.js"></script>
+</body>
+
+</html>
