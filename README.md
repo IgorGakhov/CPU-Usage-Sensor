@@ -78,11 +78,11 @@ python main.py
 
 * Первый график
 
-![](content/chart1-example.jpeg)
+![](content/chart1-example.png)
 
 * Второй график
 
-![](content/chart2-example.jpeg)
+![](content/chart2-example.png)
 
 :heavy_exclamation_mark: Обратите внимание на пустоты в графиках. В эти промежутки времени скрипт не работал!
 
